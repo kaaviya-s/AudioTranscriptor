@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Transcription</title>
+  <style>
+    * {
+      background-color:darkseagreen;
+    }
+
+    #transcript {
+      font-size: 20px;
+      position: relative;
+      height: 200px; 
+      padding: 15px;
+    }
+
+    .search {
+      background-color: dodgerblue;
+      border-radius: 20px;
+      color: black;
+      margin-left: 700px;
+      width: 100px;
+      height: 30px;
+      margin-top: 10px;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .wordToBeSearched {
+      margin-left: 660px;
+      margin-top: 100px;
+      background-color: white; 
+      position: relative;
+      bottom: 0;
+      width: 15%;
+    }
+  </style>
+  <script>
+    
+  </script>
+</head>
+
+<body>
+  <h1 style="text-align:center;color:red">Transcription of an .wav file</h1>
+
+  <form name="textDrivenForm" action="/search" method='POST'>
+
+    <input type="text" id="input-field" class="wordToBeSearched" name="wordToBeSearched"/><br>
+    <button class="search" >Search</button>
+
+  </form>
+
+  <div id="transcript">{{ transcript }}</div>  
+
+</body>
+
+</html>
